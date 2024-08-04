@@ -9,7 +9,11 @@ class ElectronicDevice {
   }
 
   //return true if model of one device equal to other device model
-  bool compareModel(ElectronicDevice other) {
-    return model == other.model;
+  bool compareModel(ElectronicDevice otherdevice) {
+    if (model == otherdevice.model) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
