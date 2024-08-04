@@ -27,4 +27,5 @@ class Inventory {
   int noOfDevices() {
     return count;
   }
+
 }
