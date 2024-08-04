@@ -26,6 +26,21 @@ class Smartphone extends ElectronicDevice {
   Smartphone({this.batteryLife});
   @override
   displayDetails() {
+    print("the device brand is $brand");
+    print("The model of the device is $model");
     print("The battery life on hours:$batteryLife");
+  }
+}
+
+class Laptop extends ElectronicDevice {
+  int? ramSize;
+
+  Laptop({this.ramSize});
+
+  @override
+  displayDetails() {
+    print("the device brand is $brand");
+    print("The model of the device is $model");
+    print("The ram size in GB is:$ramSize");
   }
 }
