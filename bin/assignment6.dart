@@ -17,6 +17,16 @@ class ElectronicDevice{
   }
 }
 
+class Smartphone extends ElectronicDevice{
+
+int? batteryLife;
+
+  //Constucter
+  Smartphone({super.brand, super.model, this.batteryLife}) {}
+}
+
+
+
 
 
 void main() {
@@ -24,5 +34,5 @@ void main() {
   ElectronicDevice otherDevice = ElectronicDevice(brand: 'Apple', model: 'ipad');
   device.displayDetails();
   print(device.compareModel(otherDevice));
-  
+
 }
