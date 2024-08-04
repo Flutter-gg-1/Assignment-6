@@ -6,19 +6,18 @@ class Inventory {
 
   addDevice(ElectronicDevice device) {
     electronicDevices.add(device);
-    print(green('Device Added Successfully!!\n'));
+    print(green('${device.model} Added Successfully!!\n'));
   }
 
   void removeDevice(String model) {
     for (var i = 0; i < electronicDevices.length; i++) {
       if (electronicDevices[i].model == model) {
         electronicDevices.removeAt(i);
-      } else {
-        print(red('Device Not found!!'));
+        print(green('$model Removed!!'));
         return;
       }
     }
-    print(green('Device Removed!!'));
+    print(red('Device Not found!!'));
   }
 
   int getDeviceCount() {
