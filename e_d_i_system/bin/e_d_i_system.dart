@@ -1,25 +1,16 @@
 import 'electronic_device.dart';
 
 void main() {
-  Smartphone smartphone = Smartphone();
-  smartphone.brand = 'Apple';
-  smartphone.model = 'iPhone 13';
-  smartphone.batteryLife = 3;
+  Smartphone smartphone =
+      Smartphone(brand: 'Apple', model: 'iPhone 13', batteryLife: 5);
   smartphone.displayDetails();
   //________________________________________________________
-  Smartphone smartphone2 = Smartphone();
-  smartphone2.brand = 'Samsung';
-  smartphone2.model = 'Galaxy S21';
-  smartphone2.batteryLife = 5;
+  Smartphone smartphone2 =
+      Smartphone(brand: 'Samsung', model: 'Galaxy S21', batteryLife: 7);
+  smartphone2.displayDetails();
   //________________________________________________________
-  Laptop laptop = Laptop();
-  laptop.brand = 'Lenovo';
-  laptop.model = 'ThinkPad X1 Carbon';
-  laptop.ramSize = 8;
-  Laptop laptop2 = Laptop();
-  laptop2.brand = 'Apple';
-  laptop2.model = 'MacBook Air';
-  laptop2.ramSize = 16;
+  Laptop laptop = Laptop(brand: 'Apple', model: 'MacBook Pro', ramSize: 16);
+  Laptop laptop2 = Laptop(brand: 'Lenovo', model: 'Legion 5', ramSize: 8);
   laptop2.displayDetails();
   //________________________________________________________
   bool isSameModel = laptop.compareModel(other: smartphone);

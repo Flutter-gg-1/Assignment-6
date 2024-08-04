@@ -2,6 +2,8 @@ class ElectronicDevice {
   String? brand;
   String? model;
 
+  ElectronicDevice({required this.brand, required this.model});
+
   void displayDetails() {
     print('Brand: $brand');
     print('Model: $model');
@@ -14,7 +16,9 @@ class ElectronicDevice {
 
 class Smartphone extends ElectronicDevice {
   int? batteryLife; // in hours
-  Smartphone({String? brand, String? model, this.batteryLife}) : super();
+  Smartphone(
+      {required String brand, required String model, required this.batteryLife})
+      : super(brand: brand, model: model);
 
   @override
   void displayDetails() {
@@ -25,7 +29,8 @@ class Smartphone extends ElectronicDevice {
 
 class Laptop extends ElectronicDevice {
   int? ramSize; // in GB
-  Laptop({String? brand, String? model, this.ramSize}) : super();
+  Laptop({required String brand, required String model, required this.ramSize})
+      : super(brand: brand, model: model);
   @override
   void displayDetails() {
     super.displayDetails();
@@ -49,8 +54,8 @@ class Inventory {
   }
 
   void displayDevices() {
-    for (var device in devices) {
-      device.displayDetails();
+    for (var dev in devices) {
+      dev.displayDetails();
     }
   }
 }
