@@ -19,6 +19,10 @@ class Inventory {
   }
 
 //Count the total number of devices in the inventory.
+  countDevices() {
+    int count = devices.length;
+    print("The total number of devices in the inventory is $count");
+  }
 
 //Method for display details of all devices in the inventory.
   displayDevices() {
