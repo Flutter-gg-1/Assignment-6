@@ -4,13 +4,14 @@ class ElectronicDevice {
 
   ElectronicDevice({required this.brand, required this.model});
 
+//Dispaly details method
   displayDetails() {
     print("------------------------");
     print("Device brand: $brand ");
     print("Device model: $model ");
-    print("------------------------");
   }
 
+//Compare models method
   compareModel(ElectronicDevice other) {
     if (model == other.model) {
       return true;

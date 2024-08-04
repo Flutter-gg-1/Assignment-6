@@ -2,6 +2,7 @@ import 'electronic_device.dart';
 
 class Laptop extends ElectronicDevice {
   int? ramSize;
+
   Laptop({required super.brand, required super.model, required this.ramSize});
 
   // Overriding displayDetails method
@@ -11,6 +12,5 @@ class Laptop extends ElectronicDevice {
     print("Device brand: $brand ");
     print("Device model: $model ");
     print("Ram size for device: $ramSize GB ");
-    print("------------------------");
   }
 }

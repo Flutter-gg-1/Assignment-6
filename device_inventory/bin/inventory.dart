@@ -1,11 +1,33 @@
+import 'electronic_device.dart';
+
 class Inventory {
-  List devices = [];
+  List<ElectronicDevice> devices = [];
 
-  addDevice() {}
+//Add device method
+  addDevice(ElectronicDevice device) {
+    devices.add(device);
+  }
 
-  deleteDevice() {}
+//delete device method
+  deleteDevice(String model) {
+    ElectronicDevice? deviceremoved;
+    for (var element in devices) {
+      if (model == element.model) {
+        deviceremoved = element;
+      }
+    }
+    devices.remove(deviceremoved);
+  }
 
-  countDevices() {}
+//Count number of devices method
+  countDevices() {
+    print("Number of devices: ${devices.length}");
+  }
 
-  displyDevices() {}
+//Display all device method
+  displyDevices() {
+    for (var element in devices) {
+      element.displayDetails();
+    }
+  }
 }
