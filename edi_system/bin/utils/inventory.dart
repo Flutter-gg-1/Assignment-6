@@ -1,4 +1,4 @@
-import 'electronic_device.dart';
+import '../model/electronic_device.dart';
 
 class Inventory{
 

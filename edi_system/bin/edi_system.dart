@@ -1,6 +1,7 @@
-import 'smartphone.dart';
-import 'laptop.dart';
-import 'inventory.dart';
+import 'model/smartphone.dart';
+import 'model/laptop.dart';
+import 'utils/inventory.dart';
+import 'dart:io';
 
 void main(List<String> arguments) {
   Smartphone iphone15 =
