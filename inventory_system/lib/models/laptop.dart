@@ -1,12 +1,12 @@
 import 'package:inventory_system/models/electronic_device.dart'; // electronic device class
 
-// a class to represent a smartphone
-class Smartphone extends ElectronicDevice {
+// a class to represent a laptop
+class Laptop extends ElectronicDevice {
   // class attributes / variables
-  int batteryLife; // battery life in hours
+  int ramSize;
 
   // class constructor , using .super to call parent class attributes / variables
-  Smartphone({required this.batteryLife, required super.brand, required super.model});
+  Laptop({required super.brand, required super.model, required this.ramSize});
 
   // class methods / behaviour
   // method to print details of a device
@@ -14,6 +14,6 @@ class Smartphone extends ElectronicDevice {
   void displayDetails() {
     // call parent method using super.
     super.displayDetails();
-    print("Battery Life (hrs) : $batteryLife Hour${batteryLife > 1 ? 's' : ''}");
+    print("Ram Size (GB) : $ramSize GB");
   }
 }
