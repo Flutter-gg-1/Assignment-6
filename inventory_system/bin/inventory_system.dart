@@ -1,18 +1,20 @@
 import 'package:inventory_system/models/electronic_device.dart'; // electronic device class
+import 'package:inventory_system/models/smartphone.dart';        // smartphone class
+
 void main(List<String> arguments) {
-  print("Device 1");
-  ElectronicDevice device1 = ElectronicDevice(brand: "apple", model: 'TV');
-  device1.displayDetails();
-  print("-"*30);
-  print("Device 2");
-  ElectronicDevice device2 = ElectronicDevice(brand: "samsung", model: 'tv');
-  device2.displayDetails();
-  print("-"*30);
-  print("Device 3");
-  ElectronicDevice device3 = ElectronicDevice(brand: "samsung", model: 'fridge');
-  device3.displayDetails();
-  print("-"*30);
-  print('is device1 model same as device2 model ? ${device1.compareModel(device2)}');
-  print("-"*30);
-  print('is device1 model same as device3 model ? ${device1.compareModel(device3)}');
+  // create devices and add them to list
+  ElectronicDevice appleTV = ElectronicDevice(brand: "apple", model: 'TV');
+  ElectronicDevice samsungTV = ElectronicDevice(brand: "samsung", model: 'tv');
+  ElectronicDevice samsungFridge = ElectronicDevice(brand: "samsung", model: 'fridge');
+  Smartphone iphone = Smartphone(brand: "apple", model: 'iphone', batteryLife: 8);
+  List devices = [appleTV, samsungTV, samsungFridge, iphone];
+
+  // loop over devices and print each one details
+  for (int i = 0; i < devices.length; i++) {
+    print("Device ${i + 1} : ");
+    devices[i].displayDetails();
+    print("-" * 30);
+  }
+  print('is Device 1 model same as Device 2 model ? : ${appleTV.compareModel(samsungTV)}');
+  print('is Device 1 model same as Device 3 model ? : ${appleTV.compareModel(samsungFridge)}');
 }
