@@ -1,52 +1,37 @@
-# Electronic Device Inventory System
+
+![Electronic_Device_Inventory_System (1)](https://github.com/user-attachments/assets/7395e92f-9bd8-45c6-b08e-675e3173cb1a)
 
 ## Description
 
-You will enhance a basic inventory system to include methods for comparing devices and managing device counts. You will also introduce an `Inventory` class to keep track of the devices.
+You will enhance a basic inventory system to include methods for comparing devices and managing device counts. You will also introduce an Inventory class to keep track of the devices.
 
-## Instructions
+## key futures :
 
-### 1. Define the Base Class
+### -Add a device to the inventory.
+### -Display details of all devices in the inventory.
+### -Count the total number of devices in the inventory.
+### -compare method to compare two devices.
+### Remove a device from the inventory by model.
 
-Create a class named `ElectronicDevice` with the following properties:
-- `brand` (String)
-- `model` (String)
+## * Added a device
+<img width="478" alt="Screenshot 2024-08-05 at 12 45 27 AM" src="https://github.com/user-attachments/assets/292571d1-95ee-4244-8c9c-024d1d336f3e">
 
-Implement a constructor to initialize these properties. Include a method named `displayDetails()` that prints out the details of the device. Add a method named `compareModel(ElectronicDevice other)` that returns a boolean indicating whether the model of the current device is the same as the model of the `other` device.
+## * Display all devices in the inventory.
+<img width="478" alt="Screenshot 2024-08-05 at 12 52 29 AM" src="https://github.com/user-attachments/assets/8ec78673-840c-497c-ada1-f5a7a1c5bde5">
 
-### 2. Define Derived Classes
+### * Total number of devices in the inventory.
+<img width="478" alt="Screenshot 2024-08-05 at 12 49 04 AM" src="https://github.com/user-attachments/assets/20602542-a6f5-4d1b-8dc7-815e34eb11c8">
 
-**Smartphone Class:**
+### * compared two devices.
+<img width="478" alt="Screenshot 2024-08-05 at 12 51 08 AM" src="https://github.com/user-attachments/assets/274aedd2-f882-4d58-a93c-3b3e2d391afe">
 
-Create a class named `Smartphone` that extends `ElectronicDevice`. Add an additional property: `batteryLife` (int, in hours). Implement a constructor to initialize the `brand`, `model`, and `batteryLife`. Override the `displayDetails()` method to include the `batteryLife` information.
+### * Removed device from the inventory.
+<img width="478" alt="Screenshot 2024-08-05 at 12 46 48 AM" src="https://github.com/user-attachments/assets/be8c292b-41ef-4bcd-ba70-d306d0da8c55">
 
-**Laptop Class:**
 
-Create a class named `Laptop` that extends `ElectronicDevice`. Add an additional property: `ramSize` (int, in GB). Implement a constructor to initialize the `brand`, `model`, and `ramSize`. Override the `displayDetails()` method to include the `ramSize` information.
 
-### 3. Define the Inventory Class
 
-Create a class named `Inventory` that manages a list of `ElectronicDevice` objects. Include methods to:
-- Add a device to the inventory.
-- Remove a device from the inventory by model.
-- Count the total number of devices in the inventory.
-- Display details of all devices in the inventory.
 
-### 4. Create Objects and Manage Inventory
 
-Create instances of `Smartphone` and `Laptop`. Use the `Inventory` class to add these devices to the inventory. Demonstrate removing a device, counting the total number of devices, and displaying details of all devices in the inventory. Use the `compareModel()` method to compare two devices and print out the result.
 
-## Submission
 
-- Submit the Dart code for the base class, derived classes, and the `Inventory` class.
-- Demonstrate the functionality by creating instances, managing the inventory, and using the comparison method.
-
-## Evaluation Criteria
-
-- Correct implementation of inheritance and method overriding.
-- Proper functionality of the `Inventory` class methods.
-- Accurate use of the `compareModel()` method.
-- Effective demonstration of managing the inventory and displaying device details.
-
-## Deadline 
-- Aug 5 2024, 9:59 AM
