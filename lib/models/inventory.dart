@@ -1,5 +1,4 @@
 import 'package:asg6/models/electronic_device.dart';
-import 'package:asg6/models/laptop.dart';
 
 class Inventory {
   List<ElectronicDevice> lisInv = [];
@@ -16,24 +15,15 @@ class Inventory {
     }
   }
 
-
-  displayInv(){
-// print("\n\n");
-//         print("#"*50);
-
-    for(var val in lisInv){
-val.displayDetails();
-      // if(val.runtimeType == Laptop){
-
-        
-        
-      // }
-
-
-      
+  displayInv() {
+    for (var val in lisInv) {
+      val.displayDetails();
     }
+  }
 
-    // print("\n\n");
-    //     print("#"*50);
+
+
+  totalInv(){
+    print("inventory toal item ----> ${lisInv.length}");
   }
 }
