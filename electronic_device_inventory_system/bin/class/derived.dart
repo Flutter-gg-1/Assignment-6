@@ -7,8 +7,8 @@ class Smartphone extends ElectronicDevice {
       {required super.brand, required super.model, required this.batteryLife});
   @override
   void displayDetails() {
-    print(
-        "Smart phone Brand :$brand ,Model : $model , Battry life : $batteryLife");
+    print("********* Smart phone Device *********");
+    print("Brand :$brand ,Model : $model , Battry life : $batteryLife hr");
   }
 }
 
@@ -17,6 +17,7 @@ class Laptop extends ElectronicDevice {
   Laptop({required super.brand, required super.model, required this.ramSize});
   @override
   void displayDetails() {
-    print("Smart phone Brand :$brand ,Model : $model , Ram size : $ramSize GB");
+    print("********* Labtop Device *********");
+    print("Brand :$brand ,Model : $model , Ram size : $ramSize GB");
   }
 }

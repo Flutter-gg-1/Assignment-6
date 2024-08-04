@@ -4,8 +4,8 @@ class ElectronicDevice {
 
   ElectronicDevice({required this.model, required this.brand});
   void displayDetails() {
-    print("**Brand** : $brand");
-    print("**Model** : $model");
+    print("********* Electronic Device *********");
+    print("Brand : $brand , Model : $model");
   }
 
   bool compareModel(ElectronicDevice other) {

@@ -1,16 +1,35 @@
 import 'class/base.dart';
 import 'class/derived.dart';
+import 'class/inventory.dart';
 
 void main() {
-  var device1 = ElectronicDevice(model: "HUAWEI", brand: "HUAWEI Pura 70");
-  var device2 = ElectronicDevice(model: "HUAWEI", brand: "HUAWEI Pura 70 Pro");
+  var device1 = ElectronicDevice(model: "HUAWEI", brand: "MateBook X");
+  var labtop1 = Laptop(model: "HUAWEI", brand: "MateBook X Pro", ramSize: 16);
+  var smartPhone1 =
+      Smartphone(brand: "APPLE", model: "iPhone 11", batteryLife: 33);
+  var smartPhone2 =
+      Smartphone(brand: "APPLE", model: "iPhone 13 Pro", batteryLife: 90);
 
-  var ph1 =
-      Smartphone(brand: "HUAWEI", model: "HUAWEI Pura 70", batteryLife: 33);
-  var ph2 =
-      Smartphone(brand: "HUAWEI", model: "HUAWEI Pura 70 Pro", batteryLife: 34);
+  var inv = Inventory();
+  print("--------------------------------------------------------");
+  inv.addDevice(device1);
+  inv.addDevice(labtop1);
+  inv.addDevice(smartPhone1);
+  inv.addDevice(smartPhone2);
+  print('Adding ${inv.allDevices.length} devices to the inventory');
+  print("--------------------------------------------------------");
 
-  print(device1.compareModel(device2));
-  print(ph1);
-  print(ph2);
+  inv.removeDevice(device1);
+  print("Removeing device brand ${device1.brand}");
+  print("--------------------------------------------------------");
+
+  print("The totall Devices in the inventory: ${inv.totallDevices()}");
+  print("--------------------------------------------------------");
+  print("${inv.displayAllDevices()}");
+  print("--------------------------------------------------------");
+  bool isSameModel =
+      inv.compareModel(firstDevice: smartPhone1, secondDevice: smartPhone2);
+  String txt = isSameModel ? "Same Model :)" : "Diffrenet Model :(";
+  print("Compare 2 devices : $txt");
+  print("--------------------------------------------------------");
 }
