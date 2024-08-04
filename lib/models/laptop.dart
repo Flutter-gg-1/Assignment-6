@@ -16,7 +16,11 @@ class Laptop  extends ElectronicDevice{
   @override
   displayDetails(){
 
-    
+    print("#" *35);
+
+    print("model ---- > $model \nbrand ---- > $brand\nramSize ---- > $ramSize GB");
+    print("#"*35);
+    print("\n");
     
   }
 

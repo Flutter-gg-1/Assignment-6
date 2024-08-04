@@ -19,6 +19,7 @@ class Smartphone extends ElectronicDevice{
 
     print("model ---- > $model \nbrand ---- > $brand\nbatteryLife ---- > $batteryLife hours");
     print("#"*35);
+    print("\n");
     
   }
 

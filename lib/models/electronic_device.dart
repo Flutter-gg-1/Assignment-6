@@ -27,6 +27,7 @@ class ElectronicDevice{
 
     print("model ---- > $model \nbrand ---- > $brand\n");
     print("#"*35);
+    print("\n");
 
   }
 
