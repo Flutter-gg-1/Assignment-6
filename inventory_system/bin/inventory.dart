@@ -16,8 +16,10 @@ class Inventory {
   }
 
   static void displayDetails() {
+    print("\n\n########## All devices ##########");
     for (var device in devices) {
       device.displayDetails();
     }
+    print("\n\n#################################");
   }
 }
