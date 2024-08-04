@@ -7,7 +7,7 @@ class ElectronicDevice{
 
   void displayDetails(){
 
-    print("Your device is from $brand is a/an $model");
+    print(" device is from $brand model is a/an $model");
   }
 
   bool compareModel(ElectronicDevice other){
@@ -43,20 +43,56 @@ int? ramSize;
     @override 
     void displayDetails() {
     super.displayDetails();
-    print("Ram size life is $ramSize");
+    print("Ram size is $ramSize");
 
   }
   
 }
 
+class Inventory{
+List<ElectronicDevice> inventory=[];
+
+  void addDevice(ElectronicDevice device) {
+    inventory.add(device);
+  }
+
+void removeDeviceByModel(String model) {
+  for (int i = inventory.length - 1; i >= 0; i--) {
+    if (inventory[i].model == model) {
+      inventory.removeAt(i);
+    }
+  }
+}
+
+  int deviceCount(){
+    int deviceCount = inventory.length;
+    return deviceCount;
+  }
+  
+  void displayAllDevices() {
+     print("All devices:");
+    for (ElectronicDevice device in inventory) {
+     print("--------");
+      device.displayDetails();
+      
+    }
+  }
+}
+
 
 
 void main() {
-  ElectronicDevice device = ElectronicDevice(brand: 'Apple', model: 'ipad');
-  ElectronicDevice otherDevice = ElectronicDevice(brand: 'Apple', model: 'ipad');
-  device.displayDetails();
-  print(device.compareModel(otherDevice));
-  Smartphone phone=Smartphone(batteryLife: 100);
+
+  Smartphone phone=Smartphone(brand: 'Apple', model: 'ipad', batteryLife: 100);
   phone.displayDetails();
+  Laptop laptop=Laptop(brand: 'Asus', model: 'laptop', ramSize: 8);
+  laptop.displayDetails();
+  Inventory inventory =Inventory();
+  inventory.addDevice(phone);
+  inventory.addDevice(laptop);
+  inventory.displayAllDevices();
+  print(inventory.deviceCount());
+  inventory.removeDeviceByModel("ipad");
+  inventory.displayAllDevices();
 
 }
