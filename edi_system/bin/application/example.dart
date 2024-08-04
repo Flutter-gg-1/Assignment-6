@@ -4,6 +4,7 @@ import '../utils/inventory.dart';
 import '../edi_system.dart';
 
 showExample() {
+  print('');
   Smartphone iphone15 =
       Smartphone(brand: 'Apple', model: 'iPhone 15 Pro', batteryLife: 23);
   Smartphone s24_1 =
