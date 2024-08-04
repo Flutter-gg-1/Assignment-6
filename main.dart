@@ -46,4 +46,3 @@ void main(List<String> arguments) {
   print(yallowPen("devices after remove iphone14 :"));
   inventory.displayDevises();
 }
-///
