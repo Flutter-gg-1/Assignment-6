@@ -33,7 +33,21 @@ int? batteryLife;
   
 }
 
+class Laptop extends ElectronicDevice{
 
+int? ramSize;
+
+  //Constucter
+  Laptop({super.brand, super.model, this.ramSize}) {}
+
+    @override 
+    void displayDetails() {
+    super.displayDetails();
+    print("Ram size life is $ramSize");
+
+  }
+  
+}
 
 
 
