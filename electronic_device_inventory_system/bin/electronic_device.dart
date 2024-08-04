@@ -4,8 +4,8 @@ class ElectronicDevice {
   ElectronicDevice({required this.brand, required this.model});
 
   displayDetails() {
-    print("Brand is $brand");
-    print("Model is $model");
+    print("* Brand is: $brand");
+    print("* Model is: $model");
   }
 
   //return true if model of one device equal to other device model

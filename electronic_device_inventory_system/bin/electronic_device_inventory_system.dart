@@ -29,8 +29,9 @@ void main(List<String> arguments) {
     ..addDevice(device: reemLaptop)
     ..addDevice(device: rawanLaptop);
 
-  print("\n\n\n_____________________________________________________________________________________________________________");
-  
+  print(
+      "\n\n\n____________________________________________________________________________________\n\n");
+
   //compare device model by other divce model
   print(
       "* Is Sara's phone model is the same as the model of Rawan's phone models? ${saraPhone.compareModel(rawanPhone)}");
@@ -41,6 +42,7 @@ void main(List<String> arguments) {
   inventory.countDevices();
   inventory.displayDevices();
 
+  print("*remove devices");
   inventory.removeDevice(deviceModel: "iphone 12");
   inventory.removeDevice(deviceModel: "Microsoft Surface");
 

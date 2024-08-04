@@ -31,18 +31,20 @@ class Inventory {
     int count = devices.length;
     print("\n____________________________________________________________\n");
     print("The total number of devices in the inventory is $count");
-    print("_____________________________________________________________\n");
+    print("____________________________________________________________\n");
   }
 
 //Method for display details of all devices in the inventory.
   displayDevices() {
     print("           All devices in inventory           ");
-    print("**********************************************");
+    print("************************************************************");
     print("\n");
     for (var element in devices) {
       element.displayDetails();
+      print("______________________________");
+      print("\n");
     }
-    print("___________________________________________");
+    print("____________________________________________________________");
     print("\n");
   }
 }

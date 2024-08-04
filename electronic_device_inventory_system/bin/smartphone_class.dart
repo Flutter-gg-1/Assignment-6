@@ -6,6 +6,7 @@ class Smartphone extends ElectronicDevice {
 
   @override
   displayDetails() {
-    print("battery life in hours is $batteryLife");
+    super.displayDetails();
+    print("* Battery life in hours is: $batteryLife");
   }
 }
