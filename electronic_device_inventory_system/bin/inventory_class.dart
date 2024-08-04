@@ -1,6 +1,7 @@
 import 'electronic_device.dart';
 
 class Inventory {
+  // list to store devices
   List<ElectronicDevice> devices = [];
   //method for Add a device to the inventory.
   addDevice({required ElectronicDevice device}) {
@@ -13,7 +14,6 @@ class Inventory {
     for (var element in devices) {
       if (element.model == deviceModel) {
         removeDevice.add(element);
-        break;
       }
     }
     if (removeDevice.isNotEmpty) {

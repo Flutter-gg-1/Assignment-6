@@ -41,8 +41,9 @@ void main(List<String> arguments) {
   //count the total number of devices, then display all devices
   inventory.countDevices();
   inventory.displayDevices();
-
+  //to remove devices
   print("*remove devices");
+  //This will remove both smartphone that have iphone 12 model
   inventory.removeDevice(deviceModel: "iphone 12");
   inventory.removeDevice(deviceModel: "Microsoft Surface");
 
