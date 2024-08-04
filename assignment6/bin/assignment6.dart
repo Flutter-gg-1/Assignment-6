@@ -1,81 +1,43 @@
-
-
+// import 'electronic_device.dart';
+import 'smart_phone.dart';
+import 'laptop.dart';
+import 'inventory.dart';
 void main() {
+  Smartphone smartphone = Smartphone();
+  smartphone.brand = "Apple";
+  smartphone.model = "iphone13";
+  smartphone.batteryLife = 200;
 
-  
+  Smartphone smartphone2 = Smartphone();
+  smartphone2.brand = "Apple";
+  smartphone2.model = "iphone13";
+  smartphone2.batteryLife = 210;
+
+  Laptop laptop = Laptop();
+  laptop.brand = "lenovo";
+  laptop.model = "v900";
+  laptop.ramSize = 16;
+
+  Inventory inventory = Inventory();
+  inventory.addDevice(smartphone);
+  inventory.addDevice(laptop);
+
+  inventory.toDisplay();
+  inventory.countDevices();
+  inventory.removeDevice("iphone13");
+  inventory.toDisplay();
+  inventory.countDevices();
+
+  print(
+      "comparing the smart phone and the laptop: ${smartphone.compareModel(laptop)}");
+  print(
+      "comparing between smartphones with the same model: ${smartphone2.compareModel(smartphone)}");
 }
 
-class ElectronicDevice {
-  String? brand;
-  String? model;
 
-  ElectronicDevice({this.brand, this.model});
 
-//   ElectronicDevice(String brand,String model){
-// this.brand=brand;
-// this.model=model;
-//   }
-  displayDetails() {
-    print("the device brand is $brand");
-    print("The model of the device is $model");
-  }
 
-  bool compareModel(ElectronicDevice other) {
-    return this.model == other.model;
-  }
-}
 
-class Smartphone extends ElectronicDevice {
-  int? batteryLife;
 
-  Smartphone({this.batteryLife});
-  @override
-  displayDetails() {
-    print("the device brand is $brand");
-    print("The model of the device is $model");
-    print("The battery life on hours:$batteryLife");
-  }
-}
 
-class Laptop extends ElectronicDevice {
-  int? ramSize;
 
-  Laptop({this.ramSize});
-
-  @override
-  displayDetails() {
-    print("the device brand is $brand");
-    print("The model of the device is $model");
-    print("The ram size in GB is:$ramSize");
-  }
-}
-
-class Inventory {
-  List<ElectronicDevice> devices = [];
-
-  /*Include methods to:
-
-Add a device to the inventory.
-Remove a device from the inventory by model.
-Count the total number of devices in the inventory.
-Display details of all devices in the inventory.
-*/
-  addDevice(ElectronicDevice device) {
-    devices.add(device);
-  }
-
-  removeDevice(String model) {
-    devices.removeWhere((device) => device.model == model);
-  }
-
-  countDevices() {
-    return devices.length;
-  }
-
-  void toDisplay() {
-    for (var device in devices) {
-      device.displayDetails();
-      print("-------------");
-    }
-  }
-}
