@@ -1,9 +1,9 @@
 import 'package:inventory_system/models/electronic_device.dart'; // electronic device class
 
-// a class to represent inventory
+// class to represent inventory
 class Inventory {
   // class attributes / variables
-  List<ElectronicDevice>? devices; // a list to represents devices in inventory
+  List<ElectronicDevice>? devices; // list to represents devices in inventory
 
   // class constructor
   Inventory() {
@@ -28,7 +28,7 @@ class Inventory {
 
   // method to display details of all devices in the inventory
   void displayAll() {
-    if(devices == null) {
+    if(devices!.isEmpty) {
       print("No Devices Added Yet");
     }
     else {

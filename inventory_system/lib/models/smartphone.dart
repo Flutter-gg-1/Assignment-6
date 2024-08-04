@@ -1,9 +1,9 @@
 import 'package:inventory_system/models/electronic_device.dart'; // electronic device class
 
-// a class to represent a smartphone
+// class to represent a smartphone
 class Smartphone extends ElectronicDevice {
   // class attributes / variables
-  int batteryLife; // battery life in hours
+  int batteryLife; // battery life (hrs)
 
   // class constructor , using .super to call parent class attributes / variables
   Smartphone({required this.batteryLife, required super.brand, required super.model});

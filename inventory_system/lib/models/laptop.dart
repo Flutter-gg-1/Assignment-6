@@ -1,9 +1,9 @@
 import 'package:inventory_system/models/electronic_device.dart'; // electronic device class
 
-// a class to represent a laptop
+// class to represent a laptop
 class Laptop extends ElectronicDevice {
   // class attributes / variables
-  int ramSize;
+  int ramSize; // RAM size (GB)
 
   // class constructor , using .super to call parent class attributes / variables
   Laptop({required super.brand, required super.model, required this.ramSize});
