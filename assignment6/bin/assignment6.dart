@@ -19,3 +19,13 @@ class ElectronicDevice {
     return this.model == other.model;
   }
 }
+
+class Smartphone extends ElectronicDevice {
+  int? batteryLife;
+
+  Smartphone({this.batteryLife});
+  @override
+  displayDetails() {
+    print("The battery life on hours:$batteryLife");
+  }
+}
