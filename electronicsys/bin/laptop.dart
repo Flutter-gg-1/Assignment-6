@@ -7,6 +7,6 @@ class LapTop extends ElectronicDevice {
   @override
   void displayDetails() {
     super.displayDetails();
-    print('Ram Size: $ramSize');
+    print('Ram Size: $ramSize GB');
   }
 }

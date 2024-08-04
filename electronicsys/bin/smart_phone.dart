@@ -9,6 +9,6 @@ class SmartPhone extends ElectronicDevice {
   @override
   void displayDetails() {
     super.displayDetails();
-    print('Battery Life: $batteryLife');
+    print('Battery Life: $batteryLife H');
   }
 }
