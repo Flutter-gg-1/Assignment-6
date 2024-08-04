@@ -51,8 +51,7 @@ class Smartphone extends ElectronicDevice {
   final int batteryLife;
 
   // Constructor
-  Smartphone(String brand, String model, this.batteryLife)
-      : super(brand, model);
+  Smartphone(super.brand, super.model, this.batteryLife);
 
   @override
   void displayDetails() {
@@ -65,7 +64,7 @@ class Laptop extends ElectronicDevice {
   final int ramSize;
 
   // Constructor
-  Laptop(String brand, String model, this.ramSize) : super(brand, model);
+  Laptop(super.brand, super.model, this.ramSize);
 
   @override
   void displayDetails() {
