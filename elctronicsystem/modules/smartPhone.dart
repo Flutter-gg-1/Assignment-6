@@ -8,7 +8,7 @@ class smartPhone extends Electronicdevice {
 
   @override
   displayDetails() {
-    print("battery lif:$batteryLife");
+    print("battery lif:$batteryLife hours");
     return super.displayDetails();
   }
 }
