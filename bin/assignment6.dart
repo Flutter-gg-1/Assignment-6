@@ -23,6 +23,14 @@ int? batteryLife;
 
   //Constucter
   Smartphone({super.brand, super.model, this.batteryLife}) {}
+
+    @override 
+    void displayDetails() {
+    super.displayDetails();
+    print("Battery life is $batteryLife");
+
+  }
+  
 }
 
 
@@ -34,5 +42,7 @@ void main() {
   ElectronicDevice otherDevice = ElectronicDevice(brand: 'Apple', model: 'ipad');
   device.displayDetails();
   print(device.compareModel(otherDevice));
+  Smartphone phone=Smartphone(batteryLife: 100);
+  phone.displayDetails();
 
 }
