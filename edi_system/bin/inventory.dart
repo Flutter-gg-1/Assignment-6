@@ -22,7 +22,8 @@ class Inventory{
 
   displayDevices(){
     for (var i = 0; i < electronicDevices.length; i++) {
-      print('${electronicDevices[i].displayDetails}\n');
+      electronicDevices[i].displayDetails();
+      print('');
     }
   }
 }
