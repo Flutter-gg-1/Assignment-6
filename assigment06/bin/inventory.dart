@@ -1,4 +1,5 @@
 import 'electronic_device.dart';
+import 'colorprint.dart';
 
 class Inventory {
   // List to store devices
@@ -7,13 +8,13 @@ class Inventory {
   // Add a device to the inventory
   void addDevice(ElectronicDevice electronicDevice) {
     electronicDevices.add(electronicDevice);
-    print("Device added to the inventory successfully!");
+    printInfo("Device added to the inventory successfully!");
   }
 
   // Remove a device from the inventory
   void removeDevice(ElectronicDevice electronicDevice) {
     electronicDevices.remove(electronicDevice);
-    print("Device removed from the inventory successfully!");
+    printInfo("Device removed from the inventory successfully!");
   }
 
   // Count the total number of devices in the inventory

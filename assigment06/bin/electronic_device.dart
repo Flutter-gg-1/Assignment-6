@@ -1,3 +1,5 @@
+import 'colorprint.dart';
+
 class ElectronicDevice {
   // Properties
   final String brand;
@@ -8,7 +10,7 @@ class ElectronicDevice {
 
   // Method to display details
   void displayDetails() {
-    print("Brand: $brand, Model: $model");
+    printInfo("Brand: $brand, Model: $model");
   }
 
   // Method to compare model with another device

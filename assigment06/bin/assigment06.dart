@@ -1,5 +1,6 @@
 import 'inventory.dart';
 import 'inheritance_overriding.dart';
+import 'colorprint.dart';
 
 void main() {
   //Print the output
@@ -20,13 +21,10 @@ void main() {
   laptop1.displayDetails();
   laptop2.displayDetails();
 
-  //Print the output
-  print("\n- Inventory Management\n");
-
   // Using the Inventory class to manage the devices
   var inventory = Inventory();
   // Counting the total number of devices in the inventory
-  print("\nTotal devices: ${inventory.countDevices()}\n");
+  print("\n- Total devices: ${inventory.countDevices()}\n");
 
   inventory.addDevice(smartphone01);
   inventory.addDevice(smartphone02);
@@ -34,11 +32,11 @@ void main() {
   inventory.addDevice(laptop2);
 
   // Counting the total number of devices in the inventory
-  print("\nTotal devices: ${inventory.countDevices()}\n");
+  print("\n- Total devices: ${inventory.countDevices()}\n");
 
   // Removing a device
   inventory.removeDevice(smartphone01);
-  print("\nTotal devices: ${inventory.countDevices()}\n");
+  print("\n- Total devices: ${inventory.countDevices()}\n");
 
   //Print the output
   print("\n- Current Devices Details\n");
@@ -48,7 +46,8 @@ void main() {
   //Print the output
   print("\n- Comparing Devices\n");
   // Comparing models
-  print(
+  printInfo(
       "\nComparing smartphone and laptop1: ${smartphone01.compareModel(smartphone02)}");
-  print("Comparing laptop1 and laptop2: ${laptop1.compareModel(laptop2)}\n");
+  printInfo(
+      "Comparing laptop1 and laptop2: ${laptop1.compareModel(laptop2)}\n");
 }

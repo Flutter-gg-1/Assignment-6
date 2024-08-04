@@ -1,4 +1,5 @@
 import 'electronic_device.dart';
+import 'colorprint.dart';
 
 class Smartphone extends ElectronicDevice {
   // Property
@@ -9,7 +10,7 @@ class Smartphone extends ElectronicDevice {
 
   @override
   void displayDetails() {
-    print("Brand: $brand, Model: $model, Battery Life: $batteryLife hours");
+    printInfo("Brand: $brand, Model: $model, Battery Life: $batteryLife hours");
   }
 }
 
@@ -22,6 +23,6 @@ class Laptop extends ElectronicDevice {
 
   @override
   void displayDetails() {
-    print("Brand: $brand, Model: $model, RAM Size: $ramSize GB");
+    printInfo("Brand: $brand, Model: $model, RAM Size: $ramSize GB");
   }
 }
