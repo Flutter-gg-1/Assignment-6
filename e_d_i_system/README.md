@@ -1,2 +1,4 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+# Electronic Device Inventory System
+
+### I have used a basic OOP for inventory system
+
