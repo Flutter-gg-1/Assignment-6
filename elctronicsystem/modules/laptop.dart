@@ -3,7 +3,7 @@ import 'dart:ffi';
 import 'electronicDevice.dart';
 
 class Laptop extends Electronicdevice {
-  Int? ramSize;
+  int? ramSize;
 
   Laptop({required super.brand, required super.model, required this.ramSize});
 
