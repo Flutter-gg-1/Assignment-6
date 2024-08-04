@@ -1,3 +1,5 @@
+import '../edi_system.dart';
+
 class ElectronicDevice {
   String brand;
   String model;
@@ -5,8 +7,8 @@ class ElectronicDevice {
   ElectronicDevice({required this.brand, required this.model});
 
   void displayDetails() {
-    print('Brand: $brand');
-    print('Model: $model');
+    print(color('Brand: $brand'));
+    print(color('Model: $model'));
   }
 
   bool compareModel(ElectronicDevice other) {

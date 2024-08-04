@@ -1,4 +1,5 @@
 import 'electronic_device.dart';
+import '../edi_system.dart';
 
 class Smartphone extends ElectronicDevice {
   int batteryLife;
@@ -9,6 +10,6 @@ class Smartphone extends ElectronicDevice {
   @override
   void displayDetails() {
     super.displayDetails();
-    print('Battery Life: $batteryLife');
+    print(color('Battery Life: $batteryLife'));
   }
 }
