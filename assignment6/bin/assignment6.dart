@@ -1,4 +1,9 @@
-void main() {}
+
+
+void main() {
+
+  
+}
 
 class ElectronicDevice {
   String? brand;
@@ -42,5 +47,35 @@ class Laptop extends ElectronicDevice {
     print("the device brand is $brand");
     print("The model of the device is $model");
     print("The ram size in GB is:$ramSize");
+  }
+}
+
+class Inventory {
+  List<ElectronicDevice> devices = [];
+
+  /*Include methods to:
+
+Add a device to the inventory.
+Remove a device from the inventory by model.
+Count the total number of devices in the inventory.
+Display details of all devices in the inventory.
+*/
+  addDevice(ElectronicDevice device) {
+    devices.add(device);
+  }
+
+  removeDevice(String model) {
+    devices.removeWhere((device) => device.model == model);
+  }
+
+  countDevices() {
+    return devices.length;
+  }
+
+  void toDisplay() {
+    for (var device in devices) {
+      device.displayDetails();
+      print("-------------");
+    }
   }
 }
