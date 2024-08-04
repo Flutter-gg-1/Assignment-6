@@ -7,7 +7,7 @@ class ElectronicDevice {
     print('Model: $model');
   }
 
-  bool compareModel(ElectronicDevice other) {
+  bool compareModel({required ElectronicDevice other}) {
     return model == other.model;
   }
 }
@@ -32,18 +32,22 @@ class Laptop extends ElectronicDevice {
     print('RAM size: $ramSize GB');
   }
 }
-class Inventory{
+
+class Inventory {
   List<ElectronicDevice> devices = [];
 
-  void addDevice(ElectronicDevice device) {
+  void addDevice({required ElectronicDevice device}) {
     devices.add(device);
   }
 
-  void removeDevice(ElectronicDevice device) {
+  void removeDevice({required ElectronicDevice device}) {
     devices.remove(device);
   }
-  void countTotalNumberOfDevices(){
-    print('Total number of devices: ${devices.length}');}
+
+  void countTotalNumberOfDevices() {
+    print('Total number of devices: ${devices.length}');
+  }
+
   void displayDevices() {
     for (var device in devices) {
       device.displayDetails();
