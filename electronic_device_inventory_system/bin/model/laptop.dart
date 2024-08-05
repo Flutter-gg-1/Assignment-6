@@ -1,6 +1,6 @@
 import './electronic_device.dart';
 import '../utlis/print_with_color.dart';
-class Laptop extends ElectronicDevice {
+class Laptop extends ElectronicDevice{
   int ramSize;
 
   Laptop({

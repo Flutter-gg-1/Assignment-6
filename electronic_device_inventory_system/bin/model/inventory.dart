@@ -7,13 +7,15 @@ class Inventory {
   void addDevice(ElectronicDevice device){
     PrintWithColor.blue('==============Add Device===========');
     devices.add(device);
-    PrintWithColor.blue('===================================');
+    PrintWithColor.green('device has been add sucessfuly');
+    PrintWithColor.blue('===================================\n');
   }
 
   void removeDevice(String model){
     PrintWithColor.blue('===========Remove Device===========');
     devices.removeWhere((element) => element.model==model,);
-    PrintWithColor.blue('===================================');
+    PrintWithColor.red('device has been removed');
+    PrintWithColor.blue('===================================\n');
   }
 
   countDevice(){
@@ -26,8 +28,8 @@ class Inventory {
   displayDeviceDetails(){
     PrintWithColor.blue('======All Device Details===========');
     for (var element in devices) {
-      PrintWithColor.purple('$element\n');
+      element.displayDetails();
     }
-    PrintWithColor.blue('===================================');
+    PrintWithColor.blue('===================================\n');
   }
 }

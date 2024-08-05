@@ -14,13 +14,8 @@ class ElectronicDevice {
     PrintWithColor.green('Model : $model');
   }
 
-  bool compareModel(){
-   /*
-   compareModel(ElectronicDevice other) 
-   that returns a boolean indicating whether the model 
-   of the current device is the same as 
-   the model of the other device.
-   */
-    return true;
+  bool compareModel(ElectronicDevice other){
+    
+    return model.trim()==other.model.trim();
   }
 }

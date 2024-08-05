@@ -1,6 +1,6 @@
 import './electronic_device.dart';
 import '../utlis/print_with_color.dart';
-class SmartPhone extends ElectronicDevice {
+class SmartPhone extends ElectronicDevice{
   int batteryLife;
 
   SmartPhone({
