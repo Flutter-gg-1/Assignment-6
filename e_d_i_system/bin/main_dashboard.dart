@@ -4,9 +4,9 @@ import 'core/all_file.dart';
 void mainDashboard() {
   print('Main Dashboard:');
 
-  print("Welcome to the Abu_Mukhlef's Electronics Store!");
+  print("\n **** Welcome to the Abu_Mukhlef's Electronics Store! ****\n");
   print("we have a wide range of products for you to choose from.");
-  print("Mobile phones, laptops, and more..(coming soon)!");
+  print("Mobile phones, laptops, and more..(coming soon)!\n");
   print("1. Mobile phones, 2. Laptops, 3. Exit");
   print("Enter your choice: ");
 
@@ -14,11 +14,11 @@ void mainDashboard() {
 
   switch (choice) {
     case 1:
-      print("Mobile phones");
+      print("________ ***** Mobile phones ***** ________\n");
       smartPhone();
       break;
     case 2:
-      print("Laptops");
+      print("________ ***** Laptops ***** ________\n");
       laptops();
       break;
     case 3:

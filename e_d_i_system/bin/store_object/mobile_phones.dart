@@ -1,4 +1,5 @@
 import 'electronic_device.dart';
+
 class SmartPhone extends ElectronicDevice {
   int? batteryLife; // in hours
   SmartPhone(
@@ -9,5 +10,6 @@ class SmartPhone extends ElectronicDevice {
   void displayDetails() {
     super.displayDetails();
     print('Battery life: $batteryLife hours');
+    print('______________________________________________\n');
   }
 }
