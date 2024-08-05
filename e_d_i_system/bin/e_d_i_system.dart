@@ -1,4 +1,4 @@
-import 'electronic_device.dart';
+import 'store/electronic_device.dart';
 
 void main() {
   Smartphone smartphone =
