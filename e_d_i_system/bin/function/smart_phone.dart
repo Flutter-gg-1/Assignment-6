@@ -21,23 +21,30 @@ void smartPhone() {
   smartPhone4.displayDetails();
   //________________________________________________________
   Inventory inventory = Inventory();
-  print('Choice your device to add to cart: ');
-  int choice = int.parse(stdin.readLineSync()!);
-  switch (choice) {
-    case 1:
-      inventory.addDevice(device: smartPhone);
-      break;
-    case 2:
-      inventory.addDevice(device: smartPhone2);
-      break;
-    case 3:
-      inventory.addDevice(device: smartPhone3);
-      break;
-    case 4:
-      inventory.addDevice(device: smartPhone4);
-      break;
-    default:
-      print('Invalid choice, Exiting...');
-      exit(0);
-  }
+  do {
+    print('Choice your device to add to cart or press 0 to exit: ');
+    int choice = int.parse(stdin.readLineSync()!);
+    switch (choice) {
+      case 1:
+        inventory.addDevice(device: smartPhone);
+        print('Added successfully!');
+        break;
+      case 2:
+        inventory.addDevice(device: smartPhone2);
+        print('Added successfully!');
+        break;
+      case 3:
+        inventory.addDevice(device: smartPhone3);
+        print('Added successfully!');
+        break;
+      case 4:
+        inventory.addDevice(device: smartPhone4);
+        print('Added successfully!');
+        break;
+      default:
+        inventory.countTotalNumberOfDevices();
+        print('Exiting...');
+        exit(0);
+    }
+  } while (true);
 }

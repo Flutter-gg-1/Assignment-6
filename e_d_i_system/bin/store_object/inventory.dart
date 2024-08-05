@@ -12,7 +12,7 @@ class Inventory {
   }
 
   void countTotalNumberOfDevices() {
-    print('Total number of devices: ${devices.length}');
+    print('Total number of devices in your cart: ${devices.length}');
   }
 
   void displayDevices() {
