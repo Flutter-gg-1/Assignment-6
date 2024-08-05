@@ -5,7 +5,7 @@
 */
 class ElectronicDevice {
   // Init 2 properties
-  String brand;
+  String brand; // TODO ask way doesn't need a null safety :)
   String model;
 
   // Constructor
