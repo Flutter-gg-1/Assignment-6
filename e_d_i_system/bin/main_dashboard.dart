@@ -1,6 +1,5 @@
-//Main Dashboard
 import 'dart:io';
-
+import 'core/all_file.dart';
 void mainDashboard() {
   print('Main Dashboard:');
 
@@ -15,6 +14,7 @@ void mainDashboard() {
   switch (choice) {
     case 1:
       print("Mobile phones");
+      smartPhone();
       break;
     case 2:
       print("Laptops");
