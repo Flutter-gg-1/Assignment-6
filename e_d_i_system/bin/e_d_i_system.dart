@@ -1,6 +1,7 @@
-import 'store/electronic_device.dart';
-
+import 'core/all_file.dart';
 void main() {
+  mainDashboard();
+  //________________________________________________________
   Smartphone smartphone =
       Smartphone(brand: 'Apple', model: 'iPhone 13', batteryLife: 5);
   smartphone.displayDetails();
