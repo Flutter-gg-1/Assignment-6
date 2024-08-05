@@ -6,7 +6,7 @@ import 'electronic_device.dart';
 *
 */
 class SmartPhone extends ElectronicDevice {
-  // batteryLife as
+  // Battery life in hours
   int? batteryLife;
 
   // Constructor
