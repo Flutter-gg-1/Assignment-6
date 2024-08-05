@@ -1,7 +1,7 @@
 import 'electronic_device.dart';
-class Smartphone extends ElectronicDevice {
+class SmartPhone extends ElectronicDevice {
   int? batteryLife; // in hours
-  Smartphone(
+  SmartPhone(
       {required String brand, required String model, required this.batteryLife})
       : super(brand: brand, model: model);
 
