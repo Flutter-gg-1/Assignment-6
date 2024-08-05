@@ -15,6 +15,6 @@ class Laptop extends ElectronicDevice {
   // Override method to print details
   @override
   void displayDetails() {
-    print('Brand: $brand, Model: $model, Battery Life: $ramSize GB');
+    print('Brand: $brand. \nModel: $model. \nRamSize: $ramSize GB.');
   }
 }

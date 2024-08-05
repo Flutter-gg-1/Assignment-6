@@ -15,6 +15,6 @@ class SmartPhone extends ElectronicDevice {
   // Override method to print details
   @override
   void displayDetails() {
-    print('Brand: $brand, Model: $model, Battery Life: $batteryLife hours');
+    print('Brand: $brand. \nModel: $model. \nBattery Life: $batteryLife hours.');
   }
 }
