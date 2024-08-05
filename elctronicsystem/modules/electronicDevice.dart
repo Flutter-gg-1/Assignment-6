@@ -1,7 +1,8 @@
 class Electronicdevice {
+  //added 2 attrbute to the class
   String? brand;
   String? model;
-
+//then i creat the constacrter
   Electronicdevice({required this.brand, required this.model});
 
   displayDetails() {
@@ -9,8 +10,9 @@ class Electronicdevice {
     print("Brand:$brand");
   }
 
-  compareModel({required String model, required String currentModel}) {
-    if (model == currentModel) {
+//this method will compare the attrbute with the parameter
+  compareModel({required String? model}) {
+    if (this.model == model) {
       print(true);
     } else {
       print(false);
