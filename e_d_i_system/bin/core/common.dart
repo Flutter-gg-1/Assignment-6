@@ -23,7 +23,7 @@ void showMassage() {
       inventory.displayDevices();
       inventory.clearDevice();
       print("Cart cleared successfully!");
-      break;
+      exit(0);
     case 5:
       print("Exiting...");
       exit(0);
