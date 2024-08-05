@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'core/all_file.dart';
+
 void mainDashboard() {
   print('Main Dashboard:');
 
@@ -18,6 +19,7 @@ void mainDashboard() {
       break;
     case 2:
       print("Laptops");
+      laptops();
       break;
     case 3:
       print("Exiting...");

@@ -5,3 +5,4 @@ export '../store_object/inventory.dart';
 export '../store_object/laptops.dart';
 export '../store_object/mobile_phones.dart';
 export '../function/smart_phone.dart';
+export '../function/laptops.dart';
