@@ -1,8 +1,8 @@
 import '../utlis/print_with_color.dart';
+
 class ElectronicDevice {
   String brand;
   String model;
-
 
   ElectronicDevice({
     required this.brand,
@@ -10,8 +10,6 @@ class ElectronicDevice {
   });
 
   void displayDetails(){
-    //prints out the details of the device.
-    PrintWithColor.blue('============Device Details============');
     PrintWithColor.green('Brand : $brand');
     PrintWithColor.green('Model : $model');
   }
