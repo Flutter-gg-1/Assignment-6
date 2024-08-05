@@ -11,6 +11,9 @@ class Inventory {
     devices.remove(device);
   }
 
+  void clearDevice() {
+    devices.clear();
+  }
   void countTotalNumberOfDevices() {
     print('Total number of devices in your cart: ${devices.length}');
   }

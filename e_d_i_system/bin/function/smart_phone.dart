@@ -20,6 +20,9 @@ void smartPhone() {
       SmartPhone(brand: 'Samsung', model: 'Galaxy S22', batteryLife: 8);
   smartPhone4.displayDetails();
   //________________________________________________________
+  bool isSameModel = smartPhone.compareModel(other: smartPhone3);
+  print('\n Is it same model: $isSameModel\n');
+  //________________________________________________________
   Inventory inventory = Inventory();
   do {
     print('Choice your device to add to cart or press 0 to exit: ');
@@ -44,7 +47,7 @@ void smartPhone() {
       default:
         inventory.countTotalNumberOfDevices();
         print('Exiting...');
-        exit(0);
+        showMassage();
     }
   } while (true);
 }

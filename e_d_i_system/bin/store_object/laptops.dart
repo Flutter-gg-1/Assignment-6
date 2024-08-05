@@ -8,5 +8,6 @@ class Laptop extends ElectronicDevice {
   void displayDetails() {
     super.displayDetails();
     print('RAM size: $ramSize GB');
+    print('______________________________________________\n');
   }
 }
